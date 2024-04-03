@@ -1,0 +1,4 @@
+sudo docker swarm init --advertise-addr 192.168.80.129
+
+
+docker service create --name chatbot --replicas 2 -p 5000:5000 uditdevadiga/chatbot:latest
